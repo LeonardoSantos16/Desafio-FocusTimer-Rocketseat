@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script type="module" src="./src/main.js" defer></script>
+    
+
+</head>
+<body>
+    <div id="app" class="flex">
+        <div id="timer" class="flex">
+            <section id="time">
+                <span id="minutes">25</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </section>
+            <section id="controls" class="flex">
+                <button data-action="playToggle" class="ph ph-play-circle">
+                    <span class="sr-only">Iniciar contador</span>
+                </button>
+                <button data-action="pauseToggle" class="ph ph-pause-circle">
+                    <span class="sr-only">Pausar contador</span>
+                </button>
+                <button data-action="plus" class="ph ph-plus-circle">
+                    <span class="sr-only">Adicionar 5 minutos ao contador</span>
+                </button>
+                <button data-action="minus" class="ph ph-minus-circle">
+                    <span class="sr-only">retirar 5 minutos do contador</span>
+                </button>
+                
+            </section>
+        </div>
+        <div id="card" class="flex">
+            <button data-action="playTree" class="ph ph-tree">
+                <span class="sr-only">som ambiente floresta</span>
+            </button>
+            <button data-action="playCloud" class="ph ph-cloud">
+                <span class="sr-only">som ambiente nuvem</span>
+            </button>
+            <button data-action="playCoffee" class="ph ph-coffee">
+                <span class="sr-only">som ambiente cafeteira</span>
+            </button>
+            <button data-action="playFire" class="ph ph-fire">
+                <span class="sr-only">som ambiente fogo</span>
+            </button>
+        </div>
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #323238;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+.flex{
+    display: flex;
+}
+
+.sr-only {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    margin: -1px;
+    padding: 0px;
+    border: 0;
+    appearance: none;
+}
+
+#app{  
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    width: 8.2rem;
+    margin: auto;
+    gap: 19rem;
+}
+
+#timer{
+    flex-direction: column;
+    gap: 4.8rem
+}
+
+#time{
+    font-size: 10.5rem;
+    width: 32rem;
+}
+
+#controls{
+    gap: 4.0rem;
+    width: 31rem;
+    height: 4.8rem;
+}
+#controls button{
+    height: 4.8rem;
+    width: 4.8rem;
+    border: none;
+    background: none;
+    font-size: 6rem;
+    cursor: pointer;
+}
+
+#card{
+    display: grid;
+    grid-template-columns: repeat(2, 14rem);
+    gap: 3.2rem;
+    width: 31rem;
+    height: 34rem;
+}
+
+#card button{
+    height: 15rem;
+    border-radius: 2.4rem;
+    border: none;
+    font-size: 5.0rem;
+    cursor: pointer;
+}
+
+.cardPress{
+    background-color: #02799D;
+    color: #ffffff
+}
+
